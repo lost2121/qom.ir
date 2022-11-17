@@ -1,0 +1,83 @@
+
+/* Master Color Style */
+.bg-faded-primary{
+     background-color: #bbdefb
+}
+.bg-faded-success{
+     background-color: #c8e6c9
+}
+.bg-faded-danger{
+     background-color: #ffcdd2
+}
+.bg-faded-warning{
+     background-color: #ffe0b2
+}
+.bg-faded-info{
+     background-color: #b3e5fc
+}
+.bg-faded-dark{
+     background-color: #9fa8da
+}
+.bg-faded-light{
+     background-color: #f5f5f5
+}
+.bg-faded-secondary{
+     background-color: #cfd8dc
+}
+
+/* Box Shadow Style */
+.shadow-sm{
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.shadow-md{
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.shadow-lg{
+     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+/* Border Radius Style */
+
+.border-rounded-sm{
+
+}
+.border-rounded-md{
+     border-radius: 1rem;
+     -webkit-border-radius: 1rem;
+     -moz-border-radius: 1rem;
+}
+.border-rounded-lg{
+
+}
+
+
+
+/* Navbar Special Style */
+
+.fixed-top {
+     top: -40px;
+     transform: translateY(40px);
+     transition: transform .3s;
+ }
+
+ .navbar .megamenu{ padding: 1rem; }
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:0; right:0; width:auto; margin-top:0;  }
+	
+}	
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+		overflow-y: auto;
+	    max-height: 90vh;
+	    margin-top:10px;
+	}
+}
+/* ============ mobile view .end// ============ */
